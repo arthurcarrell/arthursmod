@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#minecraft:campfires",
+    "#minecraft:fire",
+    "minecraft:magma_block",
+    "minecraft:shroomlight",
+    "minecraft:lava",
+    "minecraft:lava_cauldron",
+    "minecraft:torch",
+    "minecraft:redstone_lamp",
+    "minecraft:ochre_froglight",
+    "minecraft:verdant_froglight",
+    "minecraft:pearlescent_froglight",
+    "minecraft:glowstone",
+    "minecraft:lantern",
+    "minecraft:soul_lantern",
+    "minecraft:beacon"
+  ]
+}

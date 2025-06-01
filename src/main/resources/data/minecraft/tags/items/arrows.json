@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values" : [
+    "arthursmod:fire_arrow",
+    "arthursmod:ice_arrow",
+    "arthursmod:shock_arrow",
+    "arthursmod:bomb_arrow"
+  ]
+}

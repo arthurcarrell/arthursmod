@@ -1,0 +1,26 @@
+{
+  "air_jump": {
+    "subtitle": "subtitles.arthursmod.item.air_jump",
+    "sounds": [
+      "arthursmod:air_jump"
+    ]
+  },
+
+  "mace_smash": {
+    "category": "player",
+    "subtitle": "subtitles.arthursmod.item.mace.smash",
+    "sounds": [
+      { "name": "arthursmod:mace/mace_smash_1" },
+      { "name": "arthursmod:mace/mace_smash_2" },
+      { "name": "arthursmod:mace/mace_smash_3" },
+      { "name": "arthursmod:mace/mace_smash_4" }
+    ]
+  },
+
+  "mace_heavy_smash": {
+    "subtitle": "subtitles.arthursmod.item.mace.heavy_smash",
+    "sounds": [
+      "arthursmod:mace/mace_heavy_smash"
+    ]
+  }
+}

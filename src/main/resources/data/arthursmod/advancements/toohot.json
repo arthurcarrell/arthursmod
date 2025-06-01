@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "correct_temp": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #n",
+    " ##",
+    "/  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "arthursmod:mace",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spyglass",
+    "#minecraft:tools",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "arthursmod:satchel",
+    "arthursmod:mace"
+  ]
+}

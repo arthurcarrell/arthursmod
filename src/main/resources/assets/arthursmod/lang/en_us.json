@@ -1,0 +1,32 @@
+{
+  "key.arthursmod.getbackslot": "Select Backslot",
+  "category.arthursmod.keybinds" : "Arthur's Mod",
+
+  "enchantment.arthursmod.air_jump": "Air Jump",
+  "enchantment.arthursmod.wind_burst": "Wind Burst",
+  "enchantment.arthursmod.knockup": "Knock-up",
+
+  "subtitles.arthursmod.item.air_jump": "Something air jumps",
+  "subtitles.arthursmod.item.mace.smash": "Mace smashes",
+  "subtitles.arthursmod.item.mace.heavy_smash": "Heavy mace smash",
+
+  "tooltip.arthursmod.satchel.info": "Can hold up to %s items",
+  "tooltip.arthursmod.satchel.emptyslot": "None",
+  "tooltip.arthursmod.orebliterator.info": "Takes gems as ammo",
+  "tooltip.arthursmod.orebliterator.chamber": "Ammo in Chamber:",
+  "tooltip.arthursmod.orebliterator.empty": "None",
+
+  "item.arthursmod.mace": "Mace",
+  "item.arthursmod.satchel": "Satchel",
+  "item.arthursmod.sanguine_sickle": "Sanguine Sickle",
+  "item.arthursmod.ore_bliterator": "Ore-bliterator",
+
+  "item.arthursmod.fire_arrow": "Fire Arrow",
+  "item.arthursmod.ice_arrow": "Ice Arrow",
+  "item.arthursmod.shock_arrow": "Shock Arrow",
+  "item.arthursmod.bomb_arrow": "Bomb Arrow",
+
+  "effect.arthursmod.frozen": "Frozen",
+  "effect.arthursmod.shock": "Shocked",
+  "effect.arthursmod.cc_immune": "Unstoppable"
+}

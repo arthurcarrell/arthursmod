@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.asteristired.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "FrozenTrackerMixin",
+    "ItemStackMixin",
+    "LivingEntityAirVelocityMixin",
+    "MobEntityInitalizeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
