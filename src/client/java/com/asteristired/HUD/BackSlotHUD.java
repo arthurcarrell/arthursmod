@@ -32,9 +32,9 @@ public class BackSlotHUD {
 
         if (item != ItemStack.EMPTY) {
             if (item.getItem() != ModItems.SATCHEL) {
-                drawContext.drawTexture(SlotTexture, x-3, y-4, 0, 22, 24, 24);
+                drawContext.drawTexture(SlotTexture, x-3, y-4, 24, 22, 24, 24);
             }
-            drawContext.drawItem(item, x+1, y-1);
+            drawContext.drawItem(item, x, y);
         }
 
     }

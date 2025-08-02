@@ -17,4 +17,10 @@ public class ModModelLayers {
             new Identifier(MOD_ID, "shock_arrow"), "main");
     public static final EntityModelLayer BOMB_ARROW = new EntityModelLayer(
             new Identifier(MOD_ID, "bomb_arrow"), "main");
+    public static final EntityModelLayer BOMB = new EntityModelLayer(
+            new Identifier(MOD_ID, "bomb"), "main");
+    public static final EntityModelLayer CRYOBOMB = new EntityModelLayer(
+            new Identifier(MOD_ID, "cryobomb"), "main");
+    public static final EntityModelLayer PYROBOMB = new EntityModelLayer(
+            new Identifier(MOD_ID, "pyrobomb"), "main");
 }

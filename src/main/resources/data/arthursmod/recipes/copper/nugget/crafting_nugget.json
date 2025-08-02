@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    },
+    {
+      "item": "arthursmod:copper_nugget"
+    }
+  ],
+  "result": {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+  }
+}

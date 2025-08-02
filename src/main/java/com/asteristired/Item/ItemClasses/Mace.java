@@ -3,26 +3,22 @@ package com.asteristired.Item.ItemClasses;
 import com.asteristired.DamageType.ModDamageTypes;
 import com.asteristired.Enchantment.ModEnchantments;
 import com.asteristired.Sounds.ModSounds;
+import com.asteristired.Statistics.ModStatistics;
 import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageTypes;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.particle.BlockStateParticleEffect;
-import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
 
 import static com.asteristired.ArthursMod.LOGGER;
 public class Mace extends AxeItem {
@@ -124,6 +120,11 @@ public class Mace extends AxeItem {
                 target.velocityModified = true;
             }
 
+        }
+
+        // update statistic if heavy hit
+        if (isHeavyHit && attacker instanceof PlayerEntity player) {
+            player.incrementStat(ModStatistics.SMASH_ATTACKS_PERFORMED);
         }
 
         // apply damage

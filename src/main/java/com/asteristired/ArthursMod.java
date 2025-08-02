@@ -9,6 +9,7 @@ import com.asteristired.Enchantment.ModEnchantments;
 import com.asteristired.Entity.ModEntities;
 import com.asteristired.Entity.custom.EyefishEntity;
 import com.asteristired.Item.ModItems;
+import com.asteristired.Statistics.ModStatistics;
 import com.asteristired.StatusEffect.ModStatusEffects;
 import com.asteristired.Tags.ModTags;
 import com.asteristired.Temperature.Temperature;
@@ -46,6 +47,7 @@ public class ArthursMod implements ModInitializer {
 		AirJumpSFXPacket.Register();
 
 		// Initalise modules
+		ModStatistics.Initalise();
 		ModStatusEffects.Initalise();
 		ModEnchantments.Initialise();
 		ModItems.Initalise();
@@ -60,10 +62,10 @@ public class ArthursMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.EYEFISH, EyefishEntity.CreateEyefishAttributes());
 
 		// callbacks
-		ServerTickEvents.END_SERVER_TICK.register(server -> {
-			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-				Temperature.DoTemperatureCheck(player, player.getServerWorld());
-			}
-		});
+//		ServerTickEvents.END_SERVER_TICK.register(server -> {
+//			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+//				Temperature.DoTemperatureCheck(player, player.getServerWorld());
+//			}
+//		});
 	}
 }

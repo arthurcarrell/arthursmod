@@ -26,7 +26,20 @@
   "item.arthursmod.shock_arrow": "Shock Arrow",
   "item.arthursmod.bomb_arrow": "Bomb Arrow",
 
+  "item.arthursmod.bomb": "Bomb",
+  "item.arthursmod.cryobomb": "Cryobomb",
+  "item.arthursmod.pyrobomb": "Pyrobomb",
+
+  "item.arthursmod.copper_nugget": "Copper Nugget",
+  "item.arthursmod.copper_axe": "Copper Axe",
+  "item.arthursmod.copper_pickaxe": "Copper Pickaxe",
+  "item.arthursmod.copper_shovel": "Copper Shovel",
+  "item.arthursmod.copper_hoe": "Copper Hoe",
+  "item.arthursmod.copper_sword": "Copper Sword",
+
   "effect.arthursmod.frozen": "Frozen",
   "effect.arthursmod.shock": "Shocked",
-  "effect.arthursmod.cc_immune": "Unstoppable"
+  "effect.arthursmod.cc_immune": "Unstoppable",
+
+  "stat.arthursmod.smash_attacks_performed": "Mace Smash Attacks"
 }

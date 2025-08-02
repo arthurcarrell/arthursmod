@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "arthursmod",
 	"version": "${version}",
-	"name": "ArthursMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Arthur's Mod",
+	"description": "Adds various stuff to minecraft that I like!",
 	"authors": [
-		"Me!"
+		"asteristired"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

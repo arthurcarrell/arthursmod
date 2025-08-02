@@ -16,7 +16,17 @@ public class AirJumpEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 20;
+        return 5;
+    }
+
+    @Override
+    public int getMaxPower(int level) {
+        return 30;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return true;
     }
 
     @Override

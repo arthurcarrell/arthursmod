@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values" : [
+    "arthursmod:copper_shovel",
+    "arthursmod:copper_pickaxe",
+    "arthursmod:copper_axe",
+    "arthursmod:copper_hoe",
+    "arthursmod:copper_sword"
+  ]
+}

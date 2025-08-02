@@ -5,6 +5,9 @@ import com.asteristired.Entity.*;
 import com.asteristired.Entity.arrow.*;
 import com.asteristired.Entity.custom.FireArrowEntity;
 import com.asteristired.Entity.feature.FrozenOverlayFeature;
+import com.asteristired.Entity.throwables.BombRenderer;
+import com.asteristired.Entity.throwables.CryoBombRenderer;
+import com.asteristired.Entity.throwables.PyroBombRenderer;
 import com.asteristired.FuseItem.FuseItemRenderer;
 import com.asteristired.HUD.*;
 import com.asteristired.Item.ModItems;
@@ -12,20 +15,11 @@ import com.asteristired.Packets.TemperaturePacketHandler;
 import com.asteristired.StatusEffect.ModStatusEffects;
 import com.asteristired.keybinds.ModKeybinds;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.option.KeyBinding;
-import net.minecraft.client.render.entity.ArrowEntityRenderer;
-import net.minecraft.client.render.entity.LivingEntityRenderer;
-import net.minecraft.client.render.entity.model.EntityModel;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import com.asteristired.HUD.DoubleJumpHUD;
 
 import static com.asteristired.ArthursMod.LOGGER;
@@ -53,7 +47,7 @@ public class ArthursModClient implements ClientModInitializer {
 			backSlotHUD.Render(drawContext, client);
 			doubleJumpHUD.Render(drawContext, client);
 			satchelHUD.Render(drawContext, client);
-			temperatureHUD.Render(drawContext, client);
+			//temperatureHUD.Render(drawContext, client);
 		});
 
 		// entities
@@ -73,6 +67,11 @@ public class ArthursModClient implements ClientModInitializer {
 		EntityModelLayerRegistry.registerModelLayer(ModModelLayers.BOMB_ARROW, ElementalArrowModel::getTexturedModelData);
 
 		EntityRendererRegistry.register(ModEntities.ORE_BULLET, OreBulletRenderer::new);
+
+		EntityRendererRegistry.register(ModEntities.BOMB, BombRenderer::new);
+		EntityRendererRegistry.register(ModEntities.CRYOBOMB, CryoBombRenderer::new);
+		EntityRendererRegistry.register(ModEntities.PYROBOMB, PyroBombRenderer::new);
+
 
 		// packet handlers
 		TemperaturePacketHandler.Register();

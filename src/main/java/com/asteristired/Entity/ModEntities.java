@@ -57,6 +57,35 @@ public class ModEntities {
                     .build()
     );
 
+    public static final EntityType<BombEntity> BOMB = Registry.register(
+            Registries.ENTITY_TYPE,
+            new Identifier(MOD_ID, "bomb"),
+            FabricEntityTypeBuilder.<BombEntity>create(SpawnGroup.MISC, BombEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f))
+                    .trackRangeBlocks(64)
+                    .trackedUpdateRate(20)
+                    .build()
+    );
+
+    public static final EntityType<CryoBombEntity> CRYOBOMB = Registry.register(
+            Registries.ENTITY_TYPE,
+            new Identifier(MOD_ID, "cryobomb"),
+            FabricEntityTypeBuilder.<CryoBombEntity>create(SpawnGroup.MISC, CryoBombEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f))
+                    .trackRangeBlocks(64)
+                    .trackedUpdateRate(20)
+                    .build()
+    );
+    public static final EntityType<PyroBombEntity> PYROBOMB = Registry.register(
+            Registries.ENTITY_TYPE,
+            new Identifier(MOD_ID, "pyrobomb"),
+            FabricEntityTypeBuilder.<PyroBombEntity>create(SpawnGroup.MISC, PyroBombEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f))
+                    .trackRangeBlocks(64)
+                    .trackedUpdateRate(20)
+                    .build()
+    );
+
     public static final EntityType<OreBulletEntity> ORE_BULLET =
             Registry.register(Registries.ENTITY_TYPE, new Identifier(MOD_ID, "ore_bullet"),
                     FabricEntityTypeBuilder.<OreBulletEntity>create(SpawnGroup.MISC, OreBulletEntity::new)

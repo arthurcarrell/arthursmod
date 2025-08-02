@@ -14,7 +14,7 @@ public class ModKeybinds {
     public static void setUpBackslotKB() {
         equipbackslotKeyBind = new KeyBinding(
                 "key.arthursmod.getbackslot", // Translation Key
-                InputUtil.Type.KEYSYM, // Key type
+                InputUtil.Type.KEYSYM,
                 InputUtil.GLFW_KEY_C, // Default key (C)
                 "category.arthursmod.keybinds" // Category in controls menu
         );
