@@ -14,6 +14,7 @@ import net.minecraft.util.Pair;
 
 import java.util.Optional;
 
+import static com.asteristired.ArthursMod.LOGGER;
 import static com.asteristired.ArthursMod.MOD_ID;
 
 public class SatchelPacket {
@@ -40,8 +41,13 @@ public class SatchelPacket {
                 NbtCompound nbt = satchelItem.getNbt();
                 NbtList itemList = (NbtList) nbt.get("StoredItems");
 
-                // get the item nbt and convert it to an ItemStack
+                // check that we aren't trying to access out of bounds
                 assert itemList != null;
+                if (selectedIndex < 0 || selectedIndex >= itemList.size()) {
+                    LOGGER.warn("SatchelPacket: selectedIndex out of bounds from itemList. Throwing packet.");
+                    return;
+                }
+                // get the item nbt and convert it to an ItemStack
                 ItemStack grabbedItem = ItemStack.fromNbt((NbtCompound) itemList.get(selectedIndex));
                 grabbedItem.setCount(1);
 

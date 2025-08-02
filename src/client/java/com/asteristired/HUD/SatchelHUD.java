@@ -64,8 +64,8 @@ public class SatchelHUD {
         }
 
         // prevent the selected index from being grabbed if it is out of bounds.
-        // code-wise you cant go out-of-bounds but if the client and the server desync then it can lead to a crash
-        if (Satchel.getSelectedIndex() > nbtList.size()) return;
+        // code-wise you cant go out-of-bounds but if the client and the server desync then it can lead to a crash, this usually happens when satchel is spammed
+        if (Satchel.getSelectedIndex() < 0 || Satchel.getSelectedIndex() >= nbtList.size()) return;
 
         // selected item
         ItemStack selectedItem = ItemStack.fromNbt((NbtCompound) nbtList.get(Satchel.getSelectedIndex()));
